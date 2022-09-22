@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import Footer from './components/Footer';
+import Menu from './components/Menu';
+import { useState } from 'react';
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleClick = () => {
+    if (menuOpen===false) {
+      setMenuOpen(true);
+    }
+    else {
+      setMenuOpen(false)
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+        <Route path="/" element={<HomePage/>}> home </Route>
+        <Route path="/projects" element={<ProjectsPage/>}> about</Route>
+        <Route path="/about" element={<AboutPage/>}> projects </Route>
+      </Routes>
+
+      <button class="invisible-button" onClick={handleClick}>
+        <Menu menuOpen={menuOpen} />
+      </button>
+
+      <Footer/>
     </div>
   );
 }
