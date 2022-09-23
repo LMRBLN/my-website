@@ -1,6 +1,6 @@
 // import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
-// import ScrollAnimation from 'react-animate-on-scroll';
-// import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 import logo_initials from "../imgs/logo_initials.svg";
 import logo_fullname from "../imgs/logo_fullname.svg";
 import arrow_down from "../imgs/arrow_down.svg";
@@ -8,13 +8,27 @@ import icon_science from "../imgs/icon_science.png";
 import icon_collab from "../imgs/icon_collab.png";
 import icon_playful from "../imgs/icon_playful.png";
 import ProjectCard from "../components/ProjectCard";
+import { useEffect, useState } from 'react';
+
 
 
 function HomePage() {
+    
+    const [isloaded, setIsLoaded] = useState(false);
+    
+    useEffect (() => {
+        setIsLoaded(true)
+    })
 
-    return (
-        <div id="home-page">
-            <div id="intro">
+    if (isloaded) {
+
+        return (
+            
+            <div id="home-page">
+
+
+            <div id="intro" class="animate__animated animate__fadeIn">
+            {/* <div id="intro" > */}
                 <div>
                     <div id="logo_initials">
                         <img src={logo_initials} alt="initials"/>
@@ -40,6 +54,7 @@ function HomePage() {
                     </a>
 
                 </div>
+
             </div>
 
             <section id="principles">
@@ -48,49 +63,53 @@ function HomePage() {
                 </h1>
                 <hr/>
                 
-                <div id="principles-description">
+                <AnimationOnScroll animateIn="animate__fadeIn" >
+                    <div id="principles-description">
 
-                    <div id="scienctific-approach">
-                        <img src={icon_science} alt="icon scientific approach"/>
-                        <div>
-                            <h3>
-                                Scientific approach
-                            </h3>
-                            <p>
-                                Originating from natural sciences, I aim for a data driven and methodologic approach in the product development process.
-                            </p>
+                        <div id="scienctific-approach">
+
+                            <img src={icon_science} alt="icon scientific approach"/>
+
+                            <div>
+                                <h3>
+                                    Scientific approach
+                                </h3>
+                                <p>
+                                    Originating from natural sciences, I aim for a data driven and methodologic approach in the product development process.
+                                </p>
+                            </div>
                         </div>
+
+                        <div id="interdisciplinary-collaboration">
+                            <div>
+                                <h3>
+                                    Interdisciplinary Collaboration
+                                </h3>
+                                <p>
+                                    Listening to people matters, from users to team members and stakeholders. Good design is result of collaboration.
+                                </p>
+                            </div>
+                            <img src={icon_collab} alt="icon interdisciplinary collaboration"/>
+                        </div>
+
+                        <div id="playful-mindset">
+                            <img src={icon_playful} alt="icon playful mindset"/>
+                            <div>
+                                <h3>
+                                    Playful mindset
+                                </h3>
+                                <p>
+                                    Love to visual details and gamification can help to make complex information systems not only more usable but enjoyable.
+                                </p>
+                            </div>
                     </div>
 
-                    <div id="interdisciplinary-collaboration">
-                        <div>
-                            <h3>
-                                Interdisciplinary Collaboration
-                            </h3>
-                            <p>
-                                Listening to people matters, from users to team members and stakeholders. Good design is result of collaboration.
-                            </p>
-                        </div>
-                        <img src={icon_collab} alt="icon interdisciplinary collaboration"/>
                     </div>
-
-                    <div id="playful-mindset">
-                        <img src={icon_playful} alt="icon playful mindset"/>
-                        <div>
-                            <h3>
-                                Playful mindset
-                            </h3>
-                            <p>
-                                Love to visual details and gamification can help to make complex information systems not only more usable but enjoyable.
-                            </p>
-                        </div>
-                </div>
-
-                </div>
 
                 <a href="/about">
                     <button class="primary-button"> Learn more about me </button>
                 </a>
+                </AnimationOnScroll>
 
             </section>
 
@@ -102,7 +121,7 @@ function HomePage() {
 
                 <div id="projectCards">
 
-                    <ProjectCard title="Project Title">
+                    <ProjectCard title="Project Title" >
                         <p> User Research | Editor Conceptualisation | Information Design </p>
                     </ProjectCard>
 
@@ -125,7 +144,15 @@ function HomePage() {
                 </a>
 
             </section>
+
+
         </div>
+
+        )
+    }
+
+    return (
+        <p>loaaading</p>
     )
 }
 

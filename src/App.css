@@ -33,7 +33,7 @@
 }
 
 #intro > div {
-  background-color: lightblue;
+  background-color:var(--main-grey);
   background-image: url(./imgs/background.png);
   background-size:cover;
   background-position: 50% 50%;
@@ -256,10 +256,15 @@ button:hover {
 
 }
 
-#footer-actions {
-  margin: 0 5vw;
+#footer {
   border-top: 1px solid var(--main-yellow);
-  padding-top: 1rem;
+  margin: 20px;
+  padding: 3vh 13vw;
+  padding-bottom: 1vh;
+
+}
+#footer-actions {
+  margin: 0 -20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -271,7 +276,6 @@ button:hover {
   flex-direction: row;
   font-size: 12px;
   margin: 0.5rem;
-  padding: 0 8vw;
 }
 
 .contactOption img {
@@ -287,7 +291,6 @@ button:hover {
 }
 
 #arrow_up {
-  margin-right: 8vw;
   filter: invert(80%) sepia(29%) saturate(505%) hue-rotate(5deg) brightness(99%) contrast(94%);
 }
 
@@ -297,9 +300,7 @@ html {
 
 #projectCards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .projectCard {
@@ -366,7 +367,7 @@ h3 {
 #picture-me img {
   width: 100%;
   object-fit: cover;
-  background-color: lightgrey;
+  background-color: white;
   flex-basis: content;
 }
 
@@ -509,6 +510,11 @@ h3 {
 
 @media screen and (min-width:1200px) {
   
+  #projectCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .projectCard {
     width: 49%;
   }
@@ -546,12 +552,16 @@ h3 {
   }
 
 
-
-  /* footer {
-    margin: auto;
-    margin-top: 8vh;
+  #footer-actions  {
     width: 1200px;
-    background-color: red;
-  } */
+    margin: auto;
+  }
+
+  .projectImage {
+    height: 320px;
+  }
 }
 
+.animate__animated.animate__fadeInTopRight {
+  --animate-duration: 0.2s;
+}

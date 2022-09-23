@@ -2,6 +2,7 @@ import menu_icon from "../../src/imgs/menu_icon.svg"
 import menu_icon_close from "../../src/imgs/menu_icon_close.svg"
 import icon_email from "../imgs/icon_mail.svg";
 import icon_linkedin from "../imgs/icon_linkedin.svg";
+import { Link } from "react-router-dom";
 
 function Menu(props) {
 
@@ -17,11 +18,12 @@ function Menu(props) {
                 :
                 <>
 
+                    {/* <div id="menu-open" class="animate__animated animate__fadeInTopRight"> */}
                     <div id="menu-open">
                         <div>
-                            <a href="/"> Home</a>
-                            <a href="/about"> About</a>
-                            <a href="/projects"> Projects</a>
+                            <Link to="/"> Home </Link>
+                            <Link to="/about"> About </Link>
+                            <Link to="/projects"> Projects</Link>
 
                             <div id="menu-contactOptions">
 
