@@ -23,7 +23,19 @@ function AboutPage() {
                         <hr/>
 
                         <p>
-                            It was fun to solve problems in an analytic way but but I felt like something was missing here and it got confirmed when I started my studies in design. The most important thing I learned here is that for developing a good product, technical know how will never be enough. Within different industrial design projects I lead, interdiciplinary team constellations turned out to be a very important factor. Putting yourself into the shoes of a person who is not at all part of the development process was crucial. And even if can hurt a bit, mostly the simpler works better than the one you’re most proud of.
+                        My journey started on the technical side: during my studies of engineering sciences, I learned to acquire new fields in a short time, eg. by abstracting principles instead of memorizing details, and not to be afraid of things looking complex in the beginning. 
+<br/>
+<br/>
+But something was missing here for me, so I continued my studies in Industrial Design. The most important thing I understood here was that knowledge is not the most important factor to develop a good product, but empathy is. And, that it is useful to try things out instead of thinking about them too long.
+<br/>
+<br/>
+After my studies, I stepped into UX Design. In my opinion, it is not too different, except that the concept of ergonomy refers more to perception psychology and learning, as well as the fact that graphic and information design has clearly a bigger emphasis in the process. Two things I had always been particularly interested in anyway!
+<br/>
+<br/>
+Working in the IT industry for a while, I felt the need to gain a better understanding of the field and enrolled in a full-stack web development boot camp.
+<br/>
+<br/>
+Now I want to use everything I learned in a purposeful context and bring to life ideas and concepts with practical and social benefits. 
                         </p>
                     </div>
                 
@@ -37,14 +49,46 @@ function AboutPage() {
                 <div id="experience">
 
                     <div>
-                        <h3>Nutanix</h3>
+                        <a href="https://www.nutanix.com/de">
+                            <h3>Nutanix</h3>
+                        </a>
                         <p> UX/UI Designer </p>
                     </div>
 
                     <div>
-                        <h3>unyt </h3>
+                        <a href="https://www.unyt.berlin/de/">
+                            <h3>unyt </h3>
+                        </a>
                         <p> Industrial Design Trainee </p>
                     </div>
+
+                    <div>
+                        <p> Student and self-employed Project cooperations with </p>
+                        <a href="https://www.roquette.com/">
+                            <h3>
+                                Roquette
+                            </h3>
+                        </a>
+
+                        <a href="https://intema-gmbh.de/">
+                            <h3>
+                                Intema
+                            </h3>
+                        </a>
+
+                        <a href="https://www.petromax.de/">
+                            <h3>
+                                Petromax
+                            </h3>
+                        </a>
+
+                        <a href="https://anaqor.de/">
+                            <h3>
+                                Anaqor
+                            </h3>
+                        </a>
+                    </div>
+
                 </div>
             </section>
 
@@ -110,13 +154,14 @@ function AboutPage() {
                             <li> Spanish (fluent) </li>
                         </ul>
                     </div>
-
                 </div>
-                {/* <a href="../documents/220824_CV_LaraRockenstein.pdf"> click me</a> */}
-                {/* <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:becc99aa-0651-386c-a81e-82ec3a3309e8"> click me</a> */}
+
+                <a href="https://drive.google.com/file/d/1n135bLIxp7vsPyaFI_Qi-ral9gMON0eB/view?usp=sharing"> 
+                    <button class="primary-button"> View my CV as pdf </button>
+                </a>                
+
             </section>
-                
-            <button class="primary-button"> Download my CV </button>
+
 
             <section>
                 <h1>
@@ -124,7 +169,7 @@ function AboutPage() {
                 </h1>
                 <hr/>
 
-                <RandomFactGenerator/>
+                {/* <RandomFactGenerator/> */}
             </section>
 
 

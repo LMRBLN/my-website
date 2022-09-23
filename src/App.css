@@ -324,7 +324,7 @@ html {
 h3 {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin: 0.3rem 0;
 }
 
 .projectCard p {
@@ -491,6 +491,19 @@ h3 {
     right: 8vw;
   }
 
+  #picture-and-story {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-basis: 0;
+    margin-top: 12vh;
+  }
+
+  #picture-me {
+    margin: 0 5% 0 0;
+    max-width: 500px;
+  }
+
 
 }
 
@@ -512,16 +525,11 @@ h3 {
     display: none;
   }
   
-  #picture-and-story {
+  /* #picture-and-story {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  #picture-me {
-    min-width: 300px;
-    height: 300px;
-  }
+  } */
 
   #intro-description {
     font-size: 60px;
