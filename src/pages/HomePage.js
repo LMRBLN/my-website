@@ -9,6 +9,14 @@ import icon_collab from "../imgs/icon_collab.png";
 import icon_playful from "../imgs/icon_playful.png";
 import ProjectCard from "../components/ProjectCard";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import project_reporting from "../imgs/project_reporting.png";
+import project_playpen from "../imgs/project_playpen.jpg";
+import project_experimentationkit from "../imgs/project_experimentationkit.png";
+import project_shoppingtool from "../imgs/project_shoppingtool.png";
+import project_eventplanningtool from "../imgs/project_eventplanningtool.png";
+import Stackypack from '../components/Stackypack';
+// import Stackypack from '../components/Stackypack';
 
 
 
@@ -106,9 +114,9 @@ function HomePage() {
 
                     </div>
 
-                <a href="/about">
+                <Link to="/about">
                     <button class="primary-button"> Learn more about me </button>
-                </a>
+                </Link>
                 </AnimationOnScroll>
 
             </section>
@@ -121,21 +129,37 @@ function HomePage() {
 
                 <div id="projectCards">
 
-                    <ProjectCard title="Project Title" >
-                        <p> User Research | Editor Conceptualisation | Information Design </p>
+                    <ProjectCard title="Rumble" image={project_eventplanningtool}>
+                        <p> Idea | Design | Web Development </p>
+                        {/* <p> or: how to organize events with your friends without creating the 1000th whatsapp group? </p> */}
                     </ProjectCard>
 
-                    <ProjectCard title="Project Title">
-                        <p> User Research | Editor Conceptualisation | Information Design </p>
+                    <ProjectCard title="Giraffe" image={project_shoppingtool}>
+                        <p> Idea | Design | Web Development </p>
+                        {/* <p> or: how to not get lost with your tabs anymore when looking for the perfect item? </p> */}
                     </ProjectCard>
 
-                    <ProjectCard title="Project Title">
-                        <p> User Research | Editor Conceptualisation | Information Design </p>
+                    <ProjectCard title="Stackypack" image={project_eventplanningtool}>
+                        <p> Idea | Design | Web Development </p>
+                        {/* <p> or: a game to ... </p> */}
                     </ProjectCard>
 
-                    <ProjectCard title="Project Title">
-                        <p> User Research | Editor Conceptualisation | Information Design </p>
+                    <ProjectCard title="Security Reporting" image={project_reporting}>
+                        <p> User Interviews | Concept | Visual Design </p>
+                        {/* <p> or: how to collaborate easier on security related issues within a team? </p> */}
                     </ProjectCard>
+
+                    <ProjectCard title="Algae Experimentation Kit" image={project_experimentationkit}>
+                        <p> Technical Research | Learning & Game Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
+                        {/* <p> or: how to make kids understand sustainability topics and waken their scientific interest? </p> */}
+                    </ProjectCard>
+
+                    <ProjectCard title="Inflatable playpen" image={project_playpen}>
+                        <p> Technical Research | Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
+                        {/* <p> or: how to be more flexible as a parent of a toddler? </p> */}
+                    </ProjectCard>
+
+
 
                 </div>
 
@@ -144,7 +168,10 @@ function HomePage() {
                 </a>
 
             </section>
-
+{/* 
+            <section>
+                <Stackypack></Stackypack>
+            </section> */}
 
         </div>
 

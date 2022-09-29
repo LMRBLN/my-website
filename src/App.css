@@ -102,8 +102,6 @@
   z-index: 101;
 }
 
-
-
 #menu-open {
   z-index: 100;
 }
@@ -118,7 +116,7 @@
 }
 
 #menu-contactOptions {
-  margin: 10vw;
+  margin: auto;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -126,7 +124,7 @@
 }
 
 #menu-contactOptions a {
-  margin: 0;
+  margin: 20vh 5vw;
   padding: 0;
   text-align: center;
 }
@@ -449,6 +447,26 @@ h3 {
   margin-left: -60px;
 }
 
+.filter-button {
+  display: inline-block;
+  height: 25px;
+  font-size: 12px;
+  margin-right: 10px;
+  border: 0;
+  color: white;
+}
+
+.filter-button.design {
+  background-color: var(--main-yellow);
+}
+
+.filter-button.webdev {
+  background-color: var(--main-green);
+}
+
+.disabled {
+  opacity: 0.5;
+}
 
 @media screen and (min-width:481px) {
 

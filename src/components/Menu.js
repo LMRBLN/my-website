@@ -27,7 +27,7 @@ function Menu(props) {
 
                             <div id="menu-contactOptions">
 
-                                <a href = "mailto: lara.rockenstein@live.de" target="_blank" rel="noopener noreferrer">
+                                <a href="mailto:lara.rockenstein@live.de" target="_blank" rel="noopener noreferrer">
                                     <div class="contactOption">
                                             <img src={icon_email} alt="icon email"/>
                                             <p>Email</p>
