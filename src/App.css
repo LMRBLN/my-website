@@ -20,6 +20,9 @@
   --main-red:#BB7778;
 }
 
+ul{
+  list-style-type:none;
+}
 
 .fullHeight {
   height: 100vw;
@@ -92,8 +95,12 @@
 
 #arrow_down {
   position: absolute;
-  bottom: 8vh;
+  bottom: 5vh;
 }
+
+/* #arrow_left {
+  width: 30px;
+} */
 
 #menu-icon, #menu-icon-close {
   position: fixed;
@@ -124,7 +131,8 @@
 }
 
 #menu-contactOptions a {
-  margin: 20vh 5vw;
+  margin: 5vw;
+  margin-bottom: 20vh;
   padding: 0;
   text-align: center;
 }
@@ -312,6 +320,7 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .projectImage img {
@@ -319,6 +328,37 @@ html {
   object-fit: cover;
   background-color: lightgrey;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--main-grey);
+}
+
+.projectImage:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlayText {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 h3 {
   font-size: 14px;
@@ -342,25 +382,14 @@ h3 {
   align-items: center;
 }
 
-
-/* #picture-me {
-  min-width: 150px;
-  width: 30vw;
-  max-width: 300px;
-
-  min-height: 150px;
-  height: 30vw;
-  max-height: 300px;
-
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 5vw;
-} */
-
-#picture-me {
-  margin: 5vh 0;
+.firstPageElement {
+  margin-top: 30px;
 }
 
+
+#picture-me {
+  margin-bottom: 5vh;
+}
 
 #picture-me img {
   width: 100%;
@@ -372,7 +401,6 @@ h3 {
 #story-me p {
   margin-top: 2rem;
 }
-
 
 #about-page h2 {
   font-family: 'Unica One', cursive;
@@ -447,17 +475,28 @@ h3 {
   margin-left: -60px;
 }
 
+.filter-button-group {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 .filter-button {
-  display: inline-block;
+  margin: 0 8px 8px 0;
   height: 25px;
   font-size: 12px;
-  margin-right: 10px;
   border: 0;
   color: white;
 }
 
-.filter-button.design {
+.filter-button.uxdesign {
   background-color: var(--main-yellow);
+}
+
+.filter-button.industrialdesign {
+  background-color: var(--main-red);
 }
 
 .filter-button.webdev {
@@ -465,10 +504,91 @@ h3 {
 }
 
 .disabled {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
+.showAll {
+  color: black;
+  border: 1px solid;
+  background-color: white;
+}
+
+.projectBody {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+#projectRumbleImage {
+  width: 100%;
+  border-radius: 10vw;
+  overflow: hidden;
+  height: 156vw;
+  box-shadow: -5px 5px 16px 7px rgba(0,0,0,0.23);
+}
+
+#projectRumbleImage img {
+  width: 100%;
+}
+
+#projectRumbleText {
+  width: 100%;
+}
+
+.projectDetails h3 {
+  margin-top: 20px;
+}
+
+.projectDetails h1 {
+  margin-top: 20px;
+}
+
+#projectGiraffeImage {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#projectGiraffeImage img {
+  width: 100%;
+}
+
+
+
+.footnote {
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.work-repartition {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.part-design{
+  width: 20px;
+  height: 10px;
+  background-color: var(--main-yellow);
+  border-radius: 5px 0 0 5px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.part-webdev{
+  width: 180px;
+  height: 10px;
+  background-color: var(--main-green);
+  border-radius: 0 5px 5px 0;
+  display: inline-block;
+}
+
+
 @media screen and (min-width:481px) {
+
+  #arrow_down {
+    bottom: 10vh;
+  }
 
   #principles-description {
     display: flex;
@@ -491,7 +611,20 @@ h3 {
     text-align: center;
   }
 
+  .projectBody {
+    flex-direction: row;
+  }
 
+  #projectRumbleImage {
+    margin: 0 5% 0 0;
+    border-radius: 5vw;
+    height: 74vw;
+  }
+
+  .firstPageElement {
+    margin-top: 60px;
+  }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -515,7 +648,10 @@ h3 {
     justify-content: flex-start;
     align-items:flex-start;
     flex-basis: 0;
-    margin-top: 12vh;
+  }
+
+  .firstPageElement {
+    margin-top: 80px;
   }
 
   #picture-me {
@@ -523,6 +659,12 @@ h3 {
     max-width: 500px;
   }
 
+  #projectRumbleImage {
+    background-color: black;
+    max-width: 260px;
+    border-radius: 36px;
+    max-height: 550px;
+  }
 
 }
 
@@ -549,16 +691,19 @@ h3 {
     display: none;
   }
   
-  /* #picture-and-story {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
+
+  .firstPageElement {
+    margin-top: 100px;
+  }
 
   #intro-description {
     font-size: 60px;
   }
   
+  #projectRumbleImage {
+    max-width: 260px;
+    max-height: 550px;
+  }
 }
 @media screen and (min-width:1600px) {
 
@@ -578,6 +723,12 @@ h3 {
   .projectImage {
     height: 320px;
   }
+
+  .firstPageElement {
+    margin-top: 120px;
+  }
+
+
 }
 
 .animate__animated.animate__fadeInTopRight {

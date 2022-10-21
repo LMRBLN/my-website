@@ -129,37 +129,52 @@ function HomePage() {
 
                 <div id="projectCards">
 
-                    <ProjectCard title="Rumble" image={project_eventplanningtool}>
-                        <p> Idea | Design | Web Development </p>
-                        {/* <p> or: how to organize events with your friends without creating the 1000th whatsapp group? </p> */}
+                    <ProjectCard 
+                        title="Rumble" 
+                        image={project_eventplanningtool} 
+                        alias="Or: How to stay zen when organizing events with your friends?"
+                        identifier="rumble"
+                        type="webdev">
+                            <p> Idea | Design | Web Development </p>
                     </ProjectCard>
 
-                    <ProjectCard title="Giraffe" image={project_shoppingtool}>
+                    <ProjectCard 
+                        title="Giraffe" 
+                        image={project_shoppingtool} 
+                        alias="Or: How to not get lost in tabs jungle while shopping online?"
+                        identifier="giraffe">
                         <p> Idea | Design | Web Development </p>
-                        {/* <p> or: how to not get lost with your tabs anymore when looking for the perfect item? </p> */}
                     </ProjectCard>
 
-                    <ProjectCard title="Stackypack" image={project_eventplanningtool}>
-                        <p> Idea | Design | Web Development </p>
-                        {/* <p> or: a game to ... </p> */}
-                    </ProjectCard>
 
-                    <ProjectCard title="Security Reporting" image={project_reporting}>
+                    {/* <ProjectCard title="Stackypack" image={project_eventplanningtool}>
+                        <p> Idea | Design | Web Development </p>
+                        <p> or: a game to waste your time and l </p>
+                    </ProjectCard> */}
+
+                    <ProjectCard 
+                        title="Security Reporting" 
+                        image={project_reporting} 
+                        alias="Or: How to collaborate easier on security related issues within the IT team?"
+                        identifier="security-reporting">
                         <p> User Interviews | Concept | Visual Design </p>
-                        {/* <p> or: how to collaborate easier on security related issues within a team? </p> */}
                     </ProjectCard>
 
-                    <ProjectCard title="Algae Experimentation Kit" image={project_experimentationkit}>
+                    <ProjectCard 
+                        title="Algae Experimentation Kit" 
+                        image={project_experimentationkit} 
+                        alias="Or: How to get children enthustiastic about science and sustainability?"
+                        identifier="algae-experimentation-kit">
                         <p> Technical Research | Learning & Game Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
-                        {/* <p> or: how to make kids understand sustainability topics and waken their scientific interest? </p> */}
                     </ProjectCard>
-
-                    <ProjectCard title="Inflatable playpen" image={project_playpen}>
+                
+                    <ProjectCard 
+                        title="Inflatable playpen" 
+                        image={project_playpen} 
+                        alias="Or: How to be parent of a toddler without missing out?"
+                        identifier="inflatable-playpen">
                         <p> Technical Research | Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
-                        {/* <p> or: how to be more flexible as a parent of a toddler? </p> */}
                     </ProjectCard>
-
-
 
                 </div>
 

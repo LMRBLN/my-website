@@ -12,7 +12,7 @@ function AboutPage() {
 
             <section>
 
-                <div id="picture-and-story" class="animate__animated animate__fadeIn">
+                <div id="picture-and-story" class="firstPageElement animate__animated animate__fadeIn">
                     <div id="picture-me">
                         <img src={picture_me} alt="picture of lara rockenstein"/>
                     </div>
@@ -168,7 +168,7 @@ function AboutPage() {
                     </div>
                 </AnimationOnScroll>
 
-                <a href="https://drive.google.com/file/d/1n135bLIxp7vsPyaFI_Qi-ral9gMON0eB/view?usp=sharing"> 
+                <a href="https://drive.google.com/file/d/1n135bLIxp7vsPyaFI_Qi-ral9gMON0eB/view?usp=sharing" target="_blank"> 
                     <button class="primary-button"> View my CV as pdf </button>
                 </a>                
 
