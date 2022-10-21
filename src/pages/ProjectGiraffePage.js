@@ -1,4 +1,4 @@
-// import project_shoppingtool_animated from "../imgs/project-shoppingtool-animated.gif"
+import project_shoppingtool_animated from "../imgs/Sequenz_giraffe_FR12.gif"
 import arrow_left from "../imgs/arrow_left.svg"
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function ProjectGiraffePage() {
 
 
                     <div id="projectGiraffeImage">
-                        {/* <img src={project_shoppingtool_animated} /> */}
+                        <img src={project_shoppingtool_animated} />
                     </div>
                     <div id="projectGiraffeText">
                         <h1>Giraffe</h1>

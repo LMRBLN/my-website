@@ -22,6 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#too large files
-/src/imgs/project-eventplanningtool-animated.gif
-/src/imgs/project-shoppingtool-animated.gif
+# #exclude all git files
+# *.gif
+# /src/gifs/**
