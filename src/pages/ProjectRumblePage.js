@@ -1,5 +1,4 @@
 import project_eventplanningtool_animated from "../imgs/Sequenz_rumble_short_FR12.gif"
-// import project_eventplanningtool_animated from "../imgs/project-eventplanningtool-animated.gif"
 import { Link
  } from "react-router-dom";
 function ProjectRumblePage() {
@@ -18,6 +17,7 @@ function ProjectRumblePage() {
                     <div id="projectRumbleImage">
                         <img src={project_eventplanningtool_animated} />
                     </div>
+                    
                     <div id="projectRumbleText">
                         <h1>RUMBLE</h1>
                         <hr/>

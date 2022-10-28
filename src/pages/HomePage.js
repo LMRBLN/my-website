@@ -16,6 +16,7 @@ import project_experimentationkit from "../imgs/project_experimentationkit.png";
 import project_shoppingtool from "../imgs/project_shoppingtool.png";
 import project_eventplanningtool from "../imgs/project_eventplanningtool.png";
 import Stackypack from '../components/Stackypack';
+import Tetris from '../components/Tetris';
 // import Stackypack from '../components/Stackypack';
 
 
@@ -64,6 +65,10 @@ function HomePage() {
                 </div>
 
             </div>
+
+            {/* <section>
+                <Tetris/>
+            </section> */}
 
             <section id="principles">
                 <h1> 
