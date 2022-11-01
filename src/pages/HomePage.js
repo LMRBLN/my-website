@@ -96,7 +96,7 @@ function HomePage() {
                         <div id="interdisciplinary-collaboration">
                             <div>
                                 <h3>
-                                    Interdisciplinary Collaboration
+                                    Interdisciplinary collaboration
                                 </h3>
                                 <p>
                                     Listening to people matters, from users to team members and stakeholders. Good design is result of collaboration.

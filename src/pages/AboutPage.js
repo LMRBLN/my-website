@@ -164,7 +164,7 @@ function AboutPage() {
                     </div>
                 </AnimationOnScroll>
 
-                <a href="https://drive.google.com/file/d/1n135bLIxp7vsPyaFI_Qi-ral9gMON0eB/view?usp=sharing" target="_blank"> 
+                <a href="https://drive.google.com/file/d/1xVjkNL3JovVgyabm3Y8QN651wfw8Vi2b/view?usp=sharing" target="_blank"> 
                     <button class="primary-button"> View my CV as pdf </button>
                 </a>                
 
