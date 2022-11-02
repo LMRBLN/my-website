@@ -99,7 +99,7 @@ function HomePage() {
                                     Interdisciplinary collaboration
                                 </h3>
                                 <p>
-                                    Listening to people matters, from users to team members and stakeholders. Good design is result of collaboration.
+                                    Listening to people matters, from users to team members and stakeholders. Good design results from engagement.
                                 </p>
                             </div>
                             <img src={icon_collab} alt="icon interdisciplinary collaboration"/>
