@@ -171,14 +171,12 @@ function AboutPage() {
             </section>
 
 
-            <section>
+            {/* <section>
                 <h1>
                     more about me
                 </h1>
                 <hr/>
-
-                {/* <RandomFactGenerator/> */}
-            </section>
+            </section> */}
 
 
         </div>
