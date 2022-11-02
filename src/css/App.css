@@ -548,6 +548,7 @@ h3 {
 #projectGiraffeImage {
   width: 100%;
   max-width: 1000px;
+  margin: auto;
 }
 
 #projectGiraffeImage img {
