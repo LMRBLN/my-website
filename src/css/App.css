@@ -413,18 +413,22 @@ h3 {
   font-weight: 600;
 }
 
-#skills {
+.listbox {
   border: 1px solid var(--main-yellow);
   padding: 5%;
   display: flex;
   flex-direction: column;
-
 }
 
-#skills ul{
+.listbox ul{
   list-style-type:none;
   font-size: 12px;
   margin-bottom: 1rem;
+}
+
+.features {
+  padding: 2%;
+  margin-top: 20px;
 }
 
 #experience > div, #education > div {
@@ -566,6 +570,7 @@ h3 {
 .work-repartition {
   font-size: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .part-design{
   width: 20px;
@@ -585,16 +590,9 @@ h3 {
 }
 
 .booklet {
-
-  /* width: 20vw; */
-  /* max-width: 1200px; */
-  /* max-height: 600px; */
   box-shadow: -5px 5px 16px 7px rgba(0,0,0,0.23);
-  /* align-self: center; */
   display: flex;
   flex-direction: row;
-  /* display: inline-block; */
-  /* width: auto; */
 }
 
 .one-page {
@@ -602,18 +600,12 @@ h3 {
   margin: auto;
 }
 
-.booklet-page {
-  display: inline-block;
-  background-color: white;
+.booklet img {
   width: 50%;
-  max-height: auto;
-  overflow: hidden;
-  /* border: 0.01px dashed rgb(243, 243, 243); */
 }
 
-.booklet-page img, .one-page img{
+.one-page img{
   width: 100%;
-  max-height: auto;
 }
 
 #booklet-pagination {
@@ -660,12 +652,12 @@ h3 {
     flex-direction: row-reverse;
   }
 
-  #skills {
+  .listbox {
     flex-direction: row;
     justify-content: space-around;;
   }
 
-  #skills li, #skills h3 {
+  .listbox li, .listbox h3 {
     text-align: center;
   }
 

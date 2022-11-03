@@ -14,7 +14,7 @@ function ProjectReportingPage() {
 
                 <div class="projectBody firstPageElement">
 
-                coming soon
+                Work in progress.  
                     
                 </div>
 

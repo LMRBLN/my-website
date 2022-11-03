@@ -48,25 +48,28 @@ function ProjectAlgaePage() {
 
                 <div class="firstPageElement">
 
+                {/* <div class="booklet">
+                    <div class="booklet-page">
+
+                    </div>
+
+                </div> */}
+
 
                 {pageNumber == 1 | pageNumber == numPages ?
                     <div class="booklet one-page">
                         <img src={require(`../imgs/booklet_algae_de/booklet_algae_de${pageNumber}.png`)}/>
                     </div>
-                    : null
+                    :null
                 }
 
-                {pageNumber > 1 && pageNumber < numPages &&
+                {(pageNumber > 1 && pageNumber < numPages) &&
 
-                 <div class="booklet">
-                    <div class="booklet-page">
+                    <div class="booklet">
+
                         <img src={require(`../imgs/booklet_algae_de/booklet_algae_de${pageNumber}.png`)}/>
-                    </div>
-
-                    <div class="booklet-page">
                         <img src={require(`../imgs/booklet_algae_de/booklet_algae_de${pageNumber+1}.png`)}/>
-                    </div>
-                 </div>
+                </div>
                 }
 
                  <div id="booklet-pagination">

@@ -52,18 +52,15 @@ function ProjectPlaypenPage() {
                 : null
             }
 
-            {pageNumber > 1 && pageNumber < numPages &&
+
+            {(pageNumber > 1 && pageNumber < numPages) &&
 
             <div class="booklet">
-                <div class="booklet-page">
-                    <img src={require(`../imgs/booklet_playpen_de/booklet_playpen_de${pageNumber}.png`)}/>
-                </div>
-
-                <div class="booklet-page">
-                    <img src={require(`../imgs/booklet_playpen_de/booklet_playpen_de${pageNumber+1}.png`)}/>
-                </div>
+                <img src={require(`../imgs/booklet_playpen_de/booklet_playpen_de${pageNumber}.png`)}/>
+                <img src={require(`../imgs/booklet_playpen_de/booklet_playpen_de${pageNumber+1}.png`)}/>
             </div>
             }
+
 
             <div id="booklet-pagination">
                 <div class="paginate-element">

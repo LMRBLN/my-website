@@ -127,7 +127,7 @@ function AboutPage() {
                 </h1>
                 <AnimationOnScroll animateIn="animate__fadeIn" >
 
-                    <div id="skills">
+                    <div class="listbox">
 
                         <div>
                             <h3>Web Dev</h3>
