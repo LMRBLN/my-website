@@ -31,7 +31,7 @@ function ProjectGiraffePage() {
                         <hr/>
 
                         <h3>Context</h3>
-                        <p>
+                        <p >
                             I realized this project within the ironhack bootcamp (2022/07) in cooperation with Lisa Hilterhaus and during 8 days.
                         </p>
 
@@ -44,7 +44,7 @@ function ProjectGiraffePage() {
 
 
                         <h3>Idea</h3>
-                        <p>
+                        <p class="highlight">
                             This tool helps you to always keep an overview about your shopping plans. With giraffe you can create shopping lists and oversee all your items of interest, wherever you found it. Just paste the link to your item of interest and save the product card that is getting automatically created. This way you can collect and compare items from different vendors easily and thus take better buying decisions.                        
                         </p>
                         
