@@ -31,7 +31,7 @@ function ProjectRumblePage() {
 
 
                         <h3>Idea</h3>
-                        <p>
+                        <p class="highlight">
                             Say goodbye to hundreds of different whatsapp chats and exploding messages and discussions. See and plan all your events in one place with your friends and decide on details on a democrativ basis or even plan a private poll for deciding on a gift for the host.                       
                         </p>
 
@@ -68,11 +68,12 @@ function ProjectRumblePage() {
                         <ul>
                             <li> create account / log in </li>
                             <li> create event and edit details </li>
-                            <li> invite friends </li>
-                            <li> accept / decline </li>
+                            <li> invite other users </li>
+                            <li> make other users co-hosts</li>
+                            <li> accept/decline </li>
                             <li> create polls and vote </li>
                             <li> get list and calendar overview </li>
-                            <li> upload pictures (profile picture / event header) </li>
+                            <li> upload picture (profile/event) </li>
                         </ul>
                         </div>
 
@@ -80,10 +81,10 @@ function ProjectRumblePage() {
 
                         <h3> Features to be added</h3>
                         <ul>
-                            <li> add friends / create friends groups </li>
-                            <li> get Notifications </li>
-                            <li> filter / search events </li>
-                            <li> seed friends birthdays in the calendar </li>
+                            <li> add friends </li>
+                            <li> create friends groups </li>
+                            <li> filter/search events </li>
+                            <li> seed friends birthdays in calendar </li>
                             <li> create threads and add comments </li>
                             <li> send private messages </li>
                         </ul>

@@ -71,7 +71,7 @@ function ProjectsPage() {
                         <ProjectCard 
                             title="Rumble" 
                             image={project_eventplanningtool} 
-                            alias="Or: How to stay zen when organizing events with your friends?"
+                            alias="How to stay zen when organizing events with your friends?"
                             identifier="rumble"
                             type="webdev">
                                 <p> Idea | Design | Web Development </p>
@@ -83,7 +83,7 @@ function ProjectsPage() {
                         <ProjectCard 
                             title="Giraffe" 
                             image={project_shoppingtool} 
-                            alias="Or: How to not get lost in tabs jungle while shopping online?"
+                            alias="How to not get lost in the tabs jungle while shopping online?"
                             identifier="giraffe">
                             <p> Idea | Design | Web Development </p>
                         </ProjectCard>
@@ -99,7 +99,7 @@ function ProjectsPage() {
                         <ProjectCard 
                             title="Security Reporting" 
                             image={project_reporting} 
-                            alias="Or: How to collaborate easier on security related issues within the IT team?"
+                            alias="How to collaborate easier on security related issues within the IT team?"
                             identifier="security-reporting">
                             <p> User Interviews | Concept | Visual Design </p>
                         </ProjectCard>
@@ -110,7 +110,7 @@ function ProjectsPage() {
                         <ProjectCard 
                             title="Algae Experimentation Kit" 
                             image={project_experimentationkit} 
-                            alias="Or: How to get children enthustiastic about science and sustainability?"
+                            alias="How to get children enthustiastic about science and sustainability?"
                             identifier="algae-experimentation-kit">
                             <p> Technical Research | Learning & Game Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
                         </ProjectCard>
@@ -121,7 +121,7 @@ function ProjectsPage() {
                         <ProjectCard 
                             title="Inflatable playpen" 
                             image={project_playpen} 
-                            alias="Or: How to be parent of a toddler without missing out?"
+                            alias="How to be parent of a toddler without missing out?"
                             identifier="inflatable-playpen">
                             <p> Technical Research | Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
                         </ProjectCard>

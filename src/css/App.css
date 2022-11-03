@@ -175,6 +175,12 @@ hr {
   border: 1px solid var(--main-yellow);
 }
 
+br {
+  content: "";
+  display: block;
+  height: 0.6rem;
+}
+
 /* #principles-description {
   margin: 7vh 0;
 } */
@@ -348,8 +354,10 @@ html {
 
 .overlayText {
   width: 80%;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
+  text-decoration: underline var(--main-yellow);
+  /* text-transform: uppercase; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -357,6 +365,16 @@ html {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#or {
+  text-align: center;
+  font-family:'Unica One', cursive;
+  font-size: 80px;
+  text-decoration:none;
+  display:inline-block;
+  color: var(--main-grey);
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 
@@ -631,6 +649,13 @@ h3 {
   padding: 10px;
   display: inline-block;
 
+}
+
+.highlight {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: underline var(--main-yellow);
 }
 
 
