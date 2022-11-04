@@ -37,7 +37,7 @@ function ProjectRumblePage() {
 
                         <h3>Used technologies</h3>
                         <p>
-                            The main requirements for this delivery were to have a SPA frontend built with React and a REST API backend built with ExpressJS, MongoDB and Mongoose, so that users are able to perform all CRUD actions on the different data models.
+                            The main requirements for this delivery were to have a SPA frontend built with React and a REST API backend built with ExpressJS, MongoDB and Mongoose, so that users are able to perform all CRUD actions on the different data models. JSON Web Token technology is used to authenticate the user and protect the API. 
                             As a bonus, we used Google's Material UI to get familiar with using component libraries.
                         </p>
 
@@ -55,40 +55,40 @@ function ProjectRumblePage() {
                         </div>
                         
                         <p>
-                            After a quick brainstorming, a prioritized list of envisaged app features, and some roughly sketched wireframes, we started building the backend of the application: In the first place, we established all data models including their dependencies in the form of referencing and embedding documents. In the next Step, we wrote the GET and POST routes and tested our API with Postman: At this point, we accomplished full functionality of the main CRUD operations based on user authentification. From here, we were able to start building the features in the frontend.
+                            After a quick brainstorming, a prioritized list of envisaged app features, and some roughly sketched wireframes, we started building the backend of the application: In the first place, we established all data models including their dependencies in the form of referencing and embedding documents. In the next Step, we implemented the GET and POST routes and tested our API with Postman: At this point, we accomplished full functionality of the main CRUD operations based on user authentification, so we could start building the components for the features in the frontend.
                         </p>
 
 
 
                         <div class="listbox features">
                         
-                        <div>
+                            <div>
 
-                        <h3> Realized features</h3>
-                        <ul>
-                            <li> create account / log in </li>
-                            <li> create event and edit details </li>
-                            <li> invite other users </li>
-                            <li> make other users co-hosts</li>
-                            <li> accept/decline </li>
-                            <li> create polls and vote </li>
-                            <li> get list and calendar overview </li>
-                            <li> upload picture (profile/event) </li>
-                        </ul>
-                        </div>
+                            <h3> Realized features</h3>
+                            <ul>
+                                <li> create account / log in </li>
+                                <li> create event and edit details </li>
+                                <li> invite other users </li>
+                                <li> make other users co-hosts</li>
+                                <li> accept/decline </li>
+                                <li> create polls and vote </li>
+                                <li> get list and calendar overview </li>
+                                <li> upload picture (profile/event) </li>
+                            </ul>
+                            </div>
 
-                        <div>
+                            <div>
 
-                        <h3> Features to be added</h3>
-                        <ul>
-                            <li> add friends </li>
-                            <li> create friends groups </li>
-                            <li> filter/search events </li>
-                            <li> seed friends birthdays in calendar </li>
-                            <li> create threads and add comments </li>
-                            <li> send private messages </li>
-                        </ul>
-                        </div>
+                            <h3> Features to be added</h3>
+                            <ul>
+                                <li> add friends </li>
+                                <li> create friends groups </li>
+                                <li> filter/search events </li>
+                                <li> seed friends birthdays in calendar </li>
+                                <li> create threads and add comments </li>
+                                <li> send private messages </li>
+                            </ul>
+                            </div>
 
                         </div>
  

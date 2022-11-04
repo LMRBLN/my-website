@@ -97,7 +97,7 @@ function ProjectAlgaePage() {
 
                         <h3>Context</h3>
                         <p>
-                            This project is my masters thesis (2020/11) that I realized within 5 months in cooperation with an industry partner, the algae producer <a href="https://www.roquette.com/"> Roquette Klötze GmbH & Co KG </a>.
+                            This project is my masters thesis (2020/11) that I realized within 5 months in cooperation with the algae producer <a href="https://www.roquette.com/"> Roquette Klötze GmbH & Co KG </a>.
                         </p>
 
                         <h3>Idea</h3>

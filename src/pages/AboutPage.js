@@ -30,7 +30,7 @@ function AboutPage() {
                             <br/>
                             Having entered a mindset of human-centered design as well as an iterative, test-based approach, the step into UX Design (and the digital world) after I finished my master, felt like a small one. Certainly, there is a little switch of focus, eg. by the fact that the concept of ergonomy refers more to perception psychology and learning as well as the fact that graphic and information design has evidently a bigger emphasis. Two things I had always been particularly interested in anyway!                            
                             <br/>    
-                            Working as a UX Designer in the IT industry - and thus closely together with software engineers and UI developers - for one year, I decided to enroll in a 3-months full-stack web development boot camp. I was motivated by the joy of coding but also by believing that understanding the technologies and processes better has a positive impact on my work as a digital experiences designer.                            
+                            Working as a UX Designer in the IT industry - and thus closely together with software engineers and UI developers - for one year, I decided to enroll in a 3-months full-stack web development bootcamp. I was motivated by the joy of coding but also by believing that understanding the technologies and processes better has a positive impact on my work as a digital experiences designer.                            
                             <br/>
                             Now I want to use everything I learned in a purposeful context and bring to life ideas and concepts with practical and social benefits. 
                         </p>
@@ -63,7 +63,7 @@ function AboutPage() {
                         </div>
 
                         <div>
-                            <p> Student and self-employed Project cooperations with </p>
+                            <p> Student and self-employed project cooperations with </p>
                             <a href="https://www.roquette.com/">
                                 <h3>
                                     Roquette

@@ -32,7 +32,7 @@ function ProjectGiraffePage() {
 
                         <h3>Context</h3>
                         <p >
-                            I realized this project within the ironhack bootcamp (2022/07) in cooperation with Lisa Hilterhaus and during 8 days.
+                            This project was the second out of three main deliverables during my 3-months Coding Bootcamp at Ironhack. I collaborated with one fellow student (Lisa Hilterhaus) and we finalized this project within one week.
                         </p>
 
                         <div class="work-repartition">
@@ -45,21 +45,53 @@ function ProjectGiraffePage() {
 
                         <h3>Idea</h3>
                         <p class="highlight">
-                            This tool helps you to always keep an overview about your shopping plans. With giraffe you can create shopping lists and oversee all your items of interest, wherever you found it. Just paste the link to your item of interest and save the product card that is getting automatically created. This way you can collect and compare items from different vendors easily and thus take better buying decisions.                        
-                        </p>
+                        Who always stays on top of things? Giraffe is a tool that helps you to keep an overview of your shopping plans. You can see all your items of interest in one place. Just paste the link to the item and a product card that is being automatically created. Save and organize them in lists. This way you can compare items from different vendors easily and thus take more reasonable buying decisions.       
+                                                </p>
                         
                         <h3>Used technologies</h3>
                         <p>
-                            The fullstack application is built with Express, MongoDB and NodeJS. The frontend of the application is built without using any framework.                         </p>
-                        <h3> Main features</h3>
+                            As required, we used Express as a foundation and Mongoose for models and database communication. A user authentification mechanism with password encryption is provided to protect the routes. 
+                            The frontend is built without using any framework, but with dynamic views and handlebars.
+                            
+                            <br/>
+                            As an extra step, we integrated a webscraping tool in our application to bring the core product feature (automatic card creation based on the link) to life.
+                        </p>
 
+                        <div class="listbox features">
+                        
+                        <div>
+                        <h3> Realized features</h3>
                         <ul>
-                            <li> create account / log in </li>
-                            <li> add items by copy pasting the URL (webscraping functionality)</li>
+                        <li> create account / log in </li>
+                            <li> add items by copy pasting the URL</li>
+                            <li> (webscraping functionality)</li>
                             <li> edit information manually </li>
                             <li> save items in lists </li>
                             <li> search by words and filter by price </li>
                         </ul>
+                        </div>
+
+                        <div>
+
+                        <h3> Features to be added</h3>
+                        <ul>
+                            <li> filter by more properties (eg. by shop) </li>
+                            <li> reset filters</li>
+                            <li> archive lists </li>
+                            <li> change order of products </li>
+                            <li> invite other users to lists </li>
+                            <li> add products seen in local shop </li>
+                            <li> (picture upload) </li>
+                        </ul>
+                        </div>
+
+                    </div>
+
+                    <h3> Reflection </h3>
+
+                    <p>
+                        Besides making the webscraping work, the frontend (at this point done with views and handlebars) was a big challenge, because we wanted to use many stateful elements and pages (eg. overlay modals, list tags,...). At this point we needed to perform rerender the page with every change of a variable, which resulted in a very complex handlebars management — thankfully frontend libraries such as React were invented!
+                    </p>
                     
                     
                     </div>
