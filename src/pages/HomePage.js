@@ -15,29 +15,31 @@ import project_playpen from "../imgs/project_playpen.jpg";
 import project_experimentationkit from "../imgs/project_experimentationkit.png";
 import project_shoppingtool from "../imgs/project_shoppingtool.png";
 import project_eventplanningtool from "../imgs/project_eventplanningtool.png";
-import Stackypack from '../components/Stackypack';
 import Tetris from '../components/Tetris';
-// import Stackypack from '../components/Stackypack';
+import menu_icon_close from "../../src/imgs/menu_icon_close.svg"
 
 
 
 function HomePage() {
     
-    const [isloaded, setIsLoaded] = useState(false);
-    
-    useEffect (() => {
-        setIsLoaded(true)
-    })
+    const [game, setGame] = useState(false);
 
-    if (isloaded) {
 
         return (
             
             <div id="home-page">
 
+            {game &&
+                <div id="tetris">
+                    <Tetris/>
+                    <div id="menu-icon-close" onClick={()=> setGame(false)}>
+                            <img src={menu_icon_close} alt="close menu"/>
+                    </div>
+                </div>
+            }
+
 
             <div id="intro" class="animate__animated animate__fadeIn">
-            {/* <div id="intro" > */}
                 <div>
                     <div id="logo_initials">
                         <img src={logo_initials} alt="initials"/>
@@ -62,13 +64,10 @@ function HomePage() {
                         </div>
                     </a>
 
+                    <button onClick={()=> setGame(true)}class="goplay highlight"> Go play! </button>
+
                 </div>
-
             </div>
-
-            {/* <section>
-                <Tetris/>
-            </section> */}
 
             <section id="principles">
                 <h1> 
@@ -188,19 +187,13 @@ function HomePage() {
                 </a>
 
             </section>
-{/* 
-            <section>
-                <Stackypack></Stackypack>
-            </section> */}
+
 
         </div>
 
         )
     }
 
-    return (
-        <p>loaaading</p>
-    )
-}
+
 
 export default HomePage;

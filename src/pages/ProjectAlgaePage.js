@@ -97,7 +97,7 @@ function ProjectAlgaePage() {
 
                         <h3>Context</h3>
                         <p>
-                            This project is my masters thesis (2020/11) that I realized within 5 months in cooperation with the algae producer <a href="https://www.roquette.com/"> Roquette Klötze GmbH & Co KG </a>.
+                            I developed the algae experimenttion kit as my master thesis in cooperation with the algae producer <a href="https://www.roquette.com/"> Roquette Klötze GmbH & Co KG, represented by Jörg Ullmann, who kindly provided most of the raw materials (eg. starter cultures) to me as well as his biology expert feedback. Besides the goal to work out a concept with real market potential, the thesis also aims to respond to the following research question: To what extent can didactic goals be achieved through an educational game and which factors have to be considered in its development? I worked on this project for 5 months. </a>
                         </p>
 
                         <h3>Idea</h3>
@@ -105,7 +105,15 @@ function ProjectAlgaePage() {
                             The alga can be used to illustrate many sustainability topics that are relevant to the future. With the experiment set, children can learn about biological principles and their own role with regard to the environment and nature in a playful way at an early age. Embedded in an fantasy game story, they go through various experiments, levels and topics, taking care of the algae from cultivation to harvest.                        
                         </p>
 
-                        {/* <h3>Process</h3> */}
+                        <h3>Process Overview</h3>
+                        <p>
+
+                        </p>
+
+                        <h3>Reflection</h3>
+                        <p>
+                            
+                        </p>
 
                         </div>
                     
