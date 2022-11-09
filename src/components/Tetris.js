@@ -44,7 +44,8 @@ function Tetris () {
     const [time, setTime] = useState(0);
     const [help, setHelp] = useState(false);
 
-    // const [check, setCheck] = useRef(false);
+
+
 
 
     const moveRight = () => {
@@ -165,23 +166,44 @@ function Tetris () {
     });
 
     const startAgain = () => {
-        window.location.reload(false);
+
+        // window.location.reload(false);
         // setGameOver(false);
         // setGameIsStarted(true);
     }
 
     const pauseHelp = () => {
-        setGameIsStarted(!gameIsStarted);
-        setHelp(!help);
+
+        if (gameIsStarted) {
+            setGameIsStarted(false);
+            setHelp(true);
+        }
+        else {
+            if (gameOver) {
+                setGameOver(false);
+                setBoxArr(boxArrInit);
+                setGameIsStarted(true);
+                setActiveBoxColor(initialColor);
+                setActiveBoxX((BOX_X-1)/2);
+                setActiveBoxY(BOX_Y-1);
+                setTime(0);
+                setHelp(false);
+
+
+                // setRender(!render);
+            }
+            if (help) {
+                setHelp(false);
+                setGameIsStarted(true);
+            }
+        }
     }
-
-
 
     
     return (
 
 
-        <Div>
+        <Div >
             {/* <div>
                 <button onClick={()=> setGameIsStarted(true)}> START </button>
                 <button onClick={()=> setGameIsStarted(false)}> STOP </button>
@@ -234,7 +256,7 @@ function Tetris () {
               <StartButton onClick={()=> setGameIsStarted(!gameIsStarted)}> Help </StartButton>
             </Settings> */}
 
-               <StartButton onClick={() => pauseHelp()}> {gameIsStarted? <> Pause / Help </> : <> Start </>} </StartButton>
+               <StartButton onClick={() => pauseHelp()}> {gameIsStarted && <> Pause / Help </> } {!gameIsStarted && gameOver && <> Play Again</>} {!gameIsStarted && !gameOver && <> Play On </>}</StartButton>
 
         </Div>
     ) 

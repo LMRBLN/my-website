@@ -32,7 +32,7 @@ function HomePage() {
             {game &&
                 <div id="tetris">
                     <Tetris/>
-                    <div id="menu-icon-close" onClick={()=> setGame(false)}>
+                    <div id="menu-icon-close-tetris" onClick={()=> setGame(false)}>
                             <img src={menu_icon_close} alt="close menu"/>
                     </div>
                 </div>

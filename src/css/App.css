@@ -109,6 +109,13 @@ ul{
   z-index: 101;
 }
 
+#menu-icon-close-tetris {
+  position: inherit;
+  top: 13vw;
+  right: 13vw;
+  z-index: 101;
+}
+
 #menu-open {
   z-index: 100;
 }
@@ -732,7 +739,7 @@ h3 {
     bottom: 13vh;
   }
   
-  #menu-icon, #menu-icon-close {
+  #menu-icon, #menu-icon-close, #menu-icon-close-tetris {
     top: 8vw;
     right: 8vw;
   }
