@@ -105,15 +105,16 @@ function ProjectAlgaePage() {
                             The alga can be used to illustrate many sustainability topics that are relevant to the future. With the experiment set, children can learn about biological principles and their own role with regard to the environment and nature in a playful way at an early age. Embedded in an fantasy game story, they go through various experiments, levels and topics, taking care of the algae from cultivation to harvest.                        
                         </p>
 
-                        <h3>Process Overview</h3>
+                        {/* <h3>Process Overview</h3>
+                        <p>
+                            In a 
+
+                        </p> */}
+
+                        {/* <h3>Reflection</h3>
                         <p>
 
-                        </p>
-
-                        <h3>Reflection</h3>
-                        <p>
-                            
-                        </p>
+                        </p> */}
 
                         </div>
                     

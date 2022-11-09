@@ -301,7 +301,8 @@ const StartButton = styled.button`
     bottom: 15%;
     width: 130px;
     height: 50px;
-    background-color: #E1E0DD;
+    ${'' /* background-color: #E1E0DD; */}
+    background: rgba(225, 224, 221, 0);;
     margin-top: 3%;
     padding: 5px;
     border: none;
