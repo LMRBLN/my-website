@@ -58,7 +58,7 @@ ul{
 }
 
 #intro-description {
-  font-size: 40px;
+  font-size: 34px;
   line-height: 100%;
   width: 100%;
 }
@@ -361,7 +361,7 @@ html {
 
 .overlayText {
   width: 80%;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: underline var(--main-yellow);
   /* text-transform: uppercase; */
@@ -725,7 +725,10 @@ h3 {
   .firstPageElement {
     margin-top: 60px;
   }
-  
+
+  #intro-description {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
