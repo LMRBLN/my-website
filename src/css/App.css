@@ -95,7 +95,7 @@ ul{
 
 #arrow_down {
   position: absolute;
-  bottom: 5vh;
+  bottom: 5%;
 }
 
 /* #arrow_left {
@@ -361,7 +361,7 @@ html {
 
 .overlayText {
   width: 80%;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: underline var(--main-yellow);
   /* text-transform: uppercase; */
@@ -377,7 +377,7 @@ html {
 #or {
   text-align: center;
   font-family:'Unica One', cursive;
-  font-size: 80px;
+  font-size: 40px;
   text-decoration:none;
   display:inline-block;
   color: var(--main-grey);
@@ -785,6 +785,14 @@ h3 {
 
   .goplay:hover {
     text-shadow: 5px 5px 8px  var(--main-yellow);
+  }
+
+  .overlayText {
+    font-size: 24px;
+  }
+  
+  #or {
+    font-size: 80px;
   }
 }
 
