@@ -298,7 +298,7 @@ const GameBox = styled.div`
 `
 const StartButton = styled.button`
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     width: 130px;
     height: 50px;
     ${'' /* background-color: #E1E0DD; */}

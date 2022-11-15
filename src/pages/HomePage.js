@@ -172,13 +172,13 @@ function HomePage() {
                         <p> Technical Research | Learning & Game Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
                     </ProjectCard>
                 
-                    <ProjectCard 
+                    {/* <ProjectCard 
                         title="Inflatable playpen" 
                         image={project_playpen} 
                         alias="How to be parent of a toddler without missing out?"
                         identifier="inflatable-playpen">
                         <p> Technical Research | Concept | Design | Construction for manufacturing | Prototyping | Testing  </p>
-                    </ProjectCard>
+                    </ProjectCard> */}
 
                 </div>
 
