@@ -96,7 +96,15 @@ ul{
 #arrow_down {
   position: absolute;
   bottom: 5%;
+  height: 40px;
+  overflow: hidden;
 }
+
+#arrow_down img {
+  position: relative;
+  bottom: 20px;
+}
+
 
 /* #arrow_left {
   width: 30px;
@@ -184,7 +192,7 @@ hr {
 
 br {
   content: "";
-  display: block;
+  display: block !important;
   height: 0.6rem;
 }
 
@@ -663,7 +671,7 @@ h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
-  text-decoration: underline var(--main-yellow);
+  text-decoration: underline var(--main-yellow) !important;
 }
 
 .goplay {
@@ -728,6 +736,16 @@ h3 {
 
   #intro-description {
     font-size: 40px;
+  }
+
+  #arrow_down {
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  #arrow_down img {
+    position: relative;
+    bottom: 0px;
   }
 }
 
