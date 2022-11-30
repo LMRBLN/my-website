@@ -32,7 +32,7 @@ function ProjectRumblePage() {
 
                         <h3>Idea</h3>
                         <p class="highlight">
-                            Say goodbye to hundreds of different whatsapp chats and exploding messages and discussions. See and plan all your events in one place with your friends and decide on details on a democrativ basis or even plan a private poll for deciding on a gift for the host.                       
+                            Say goodbye to hundreds of different group chats and exploding messages and discussions. See and plan all your events in one place with your friends and decide on details on a democratic basis or even plan a private poll for deciding on a gift for the host.                       
                         </p>
 
                         <h3>Used technologies</h3>

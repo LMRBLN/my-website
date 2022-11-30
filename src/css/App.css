@@ -67,14 +67,18 @@ ul{
 
 }
 
-#intro-description span {
+#intro-description a {
   font-family: 'Unica One', cursive;
   font-size: larger;
   color: var(--main-grey);
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
-/* #intro-description span:first-child:hover {
+#intro-description a:hover {
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000, 5px 5px 8px  var(--main-yellow);
+}
+
+/* #intro-description a:first-child:hover {
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000, 5px 5px 8px  var(--main-yellow);
 } */
 
@@ -238,6 +242,7 @@ button {
   border-radius: 20px;  
   font-size: 14px;
   font-weight: 600;
+  background-color: transparent;
 }
 
 .primary-button img {
@@ -690,6 +695,7 @@ h3 {
   font-family: 'Nunito', sans-serif;
   font-weight: 100;
   display: none;
+  background-color: none;
 }
 
 #tetris {
@@ -808,7 +814,7 @@ h3 {
 
   .goplay {
     display: block;
-    background-color: var(--main-grey);
+    background-color: none;
     position: absolute;
     right: 5%;
     bottom: 15%;

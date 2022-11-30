@@ -55,7 +55,7 @@ function HomePage() {
                             I am Lara Rockenstein,
                         </p>
                         <p id="intro-description">
-                            a <span> product designer </span> and <span> web developer </span> with a background in engineering sciences.
+                            a <Link to="/projects"> product designer  </Link> and <Link to="/projects"> web developer </Link> with a background in engineering sciences.
                         </p>
                     </div>
 

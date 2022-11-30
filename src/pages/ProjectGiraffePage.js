@@ -45,7 +45,7 @@ function ProjectGiraffePage() {
 
                         <h3>Idea</h3>
                         <p class="highlight">
-                        Who always stays on top of things? Giraffe is a tool that helps you to keep an overview of your shopping plans. You can see all your items of interest in one place. Just paste the link to the item and a product card that is being automatically created. Save and organize them in lists. This way you can compare items from different vendors easily and thus take more reasonable buying decisions.       
+                        Who always stays on top of things? Giraffe is a tool that helps you to keep an overview of your shopping plans. You can see all your items of interest in one place. Just paste the link to the item and a product card is being automatically created. Save and organize your items in a list. This way you can compare items from different vendors easily and thus take more reasonable buying decisions.       
                                                 </p>
                         
                         <h3>Used technologies</h3>
