@@ -26,7 +26,7 @@ function ProjectCard(props) {
                 <Link to={`/projects/${props.identifier}`}>
                     <div class="overlay"> 
                         <div class="overlayText">
-                            <p id="or"> or: </p>
+                            {/* <p id="or"> or: </p> */}
                             <br/>
                             {props.alias} 
                         </div>

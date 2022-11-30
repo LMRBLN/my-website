@@ -4,6 +4,7 @@ import "animate.css/animate.min.css";
 import logo_initials from "../imgs/logo_initials.svg";
 import logo_fullname from "../imgs/logo_fullname.svg";
 import arrow_down from "../imgs/arrow_down.svg";
+import arrow_right from "../imgs/arrow_right.svg";
 import icon_science from "../imgs/icon_science.svg";
 import icon_collab from "../imgs/icon_collab.svg";
 import icon_playful from "../imgs/icon_playful.svg";
@@ -119,7 +120,7 @@ function HomePage() {
                     </div>
 
                 <Link to="/about">
-                    <button class="primary-button"> Learn more about me </button>
+                    <button class="primary-button"> Learn more about me <img src={arrow_right}/> </button>
                 </Link>
                 </AnimationOnScroll>
 
@@ -183,7 +184,7 @@ function HomePage() {
                 </div>
 
                 <a href="/projects">
-                    <button class="primary-button"> See all projects </button>
+                    <button class="primary-button"> See all projects <img src={arrow_right}/> </button>
                 </a>
 
             </section>
